@@ -13,7 +13,7 @@ A daily-updated portfolio of **hands-on cybersecurity projects** built to develo
 
 ## 🎯 Goal
 
-Land a Junior SOC Analyst job by demonstrating:
+
 - Real log analysis and threat detection skills
 - Python scripting for security automation
 - Understanding of attacker techniques (MITRE ATT&CK)
