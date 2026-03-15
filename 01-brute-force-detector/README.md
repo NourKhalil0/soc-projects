@@ -3,79 +3,57 @@
 ![Python](https://img.shields.io/badge/Python-3.7%2B-blue?logo=python)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Category](https://img.shields.io/badge/SOC-Log%20Analysis-red)
-![Level](https://img.shields.io/badge/Level-Junior%20Analyst-orange)
 
-A command-line tool for SOC analysts to detect **SSH brute-force attacks** by parsing Linux authentication log files (`auth.log` / `secure`). Identifies suspicious IPs, targeted usernames, and flags any IPs that achieved a successful login after repeated failures — a potential indicator of compromise.
-
----
-
-## 🎯 Why This Project?
-
-Brute-force detection is one of the most common daily tasks in a SOC. This tool simulates what analysts do when triaging alerts from a SIEM — going directly to the source logs, identifying attack patterns, and flagging compromised accounts for escalation.
+This tool reads a Linux SSH log file and finds IP addresses that have failed to log in too many times. It also checks if any of those IPs eventually got in, which is a sign that something was compromised.
 
 ---
 
 ## ✨ Features
 
-- **Threshold-based alerting** — flags IPs that exceed a configurable number of failed logins
-- **Compromise detection** — highlights IPs that eventually succeeded after brute-forcing (critical finding)
-- **User enumeration tracking** — shows which usernames were targeted per attacking IP
-- **Colour-coded terminal output** — red for compromised, yellow for ongoing attacks, green for OK
-- **Demo mode** — built-in sample log generator for testing without a real server
-- **Zero dependencies** — runs on pure Python standard library
+- Flags IP addresses that fail to log in more than a set number of times
+- Marks an IP as COMPROMISED if it failed many times and then succeeded
+- Shows which usernames each IP tried to use
+- Has a built-in demo mode so you can test it without a real server
+- No external packages needed, just Python
 
 ---
 
 ## 🛠 Requirements
 
 - Python 3.7 or higher
-- Access to `/var/log/auth.log` (Linux) or `/var/log/secure` (RHEL/CentOS)
-- No external packages needed
+- A Linux auth log file like `/var/log/auth.log` or `/var/log/secure`
 
 ---
 
 ## 📦 Installation
 
 ```bash
-# Clone the repository
 git clone https://github.com/NourKhalil0/soc-projects.git
 cd soc-projects/01-brute-force-detector
-
-# Make the script executable
-chmod +x brute_force_detector.py
 ```
 
 ---
 
 ## 🚀 Usage
 
-### Scan the default log file (`/var/log/auth.log`)
+Run with the default log file:
 ```bash
 python3 brute_force_detector.py
 ```
 
-### Scan a custom log file
+Use a different log file:
 ```bash
 python3 brute_force_detector.py -f /var/log/secure
 ```
 
-### Change the detection threshold (default: 5)
+Change how many failures count as suspicious:
 ```bash
 python3 brute_force_detector.py -t 10
 ```
 
-### Run the built-in demo (no real log needed)
+Run the demo to see how it works:
 ```bash
 python3 brute_force_detector.py --demo
-```
-
-### Full options
-```
-usage: brute_force_detector.py [-h] [-f FILE] [-t THRESHOLD] [--demo]
-
-  -f, --file        Path to auth log file (default: /var/log/auth.log)
-  -t, --threshold   Failed attempts before flagging an IP (default: 5)
-  --demo            Generate and analyse a sample log file for testing
 ```
 
 ---
@@ -83,72 +61,33 @@ usage: brute_force_detector.py [-h] [-f FILE] [-t THRESHOLD] [--demo]
 ## 📊 Example Output
 
 ```
-============================================================
-   BRUTE FORCE DETECTOR — SOC Report
-============================================================
-  Log file  : /tmp/sample_auth.log
-  Threshold : 5 failed attempts
-  Generated : 2026-03-15 09:00:00
-============================================================
+========================================
+       BRUTE FORCE DETECTOR REPORT
+========================================
+Threshold: 5 failed attempts
 
-Summary
-  Total failed login attempts : 13
-  Total successful logins     : 2
-  Unique suspicious IPs       : 2
+IP: 10.0.0.5  [COMPROMISED]
+  Failed attempts : 6
+  Targeted users  : root
+  Successful login: Mar 15 08:01:22 as root
 
-Suspicious IPs (sorted by failure count)
-------------------------------------------------------------
+IP: 192.168.1.99  [ATTACKING]
+  Failed attempts : 5
+  Targeted users  : admin, guest, oracle, test, ubuntu
 
-  IP Address : 192.168.1.100  [COMPROMISED]
-  Failures   : 6
-  Targets    : root
-  Successful logins detected from this IP!
-    → Mar 15 08:01:24  user=root
-  Last attempts:
-    ✗ Mar 15 08:01:18  user=root
-    ✗ Mar 15 08:01:20  user=root
-    ✗ Mar 15 08:01:22  user=root
-
-  IP Address : 10.0.0.55  [BRUTE FORCE]
-  Failures   : 6
-  Targets    : admin, guest, oracle, test, ubuntu
-  Last attempts:
-    ✗ Mar 15 08:05:07  user=test
-    ✗ Mar 15 08:05:09  user=guest
-    ✗ Mar 15 08:05:11  user=oracle
-
-============================================================
-Recommended Actions
-  1. Block suspicious IPs at the firewall (e.g. iptables / ufw)
-  2. Investigate any COMPROMISED accounts immediately
-  3. Enable MFA on all SSH accounts
-  4. Consider moving SSH to a non-standard port
-  5. Implement Fail2Ban for automated blocking
-============================================================
+========================================
 ```
 
 ---
 
-## 🎓 Learning Outcomes
-
-By building and using this tool, you demonstrate:
+## 📚 What you learn
 
 | Skill | Description |
 |-------|-------------|
-| Log Analysis | Parsing and extracting IOCs from raw auth logs |
-| Python Scripting | Regex, file I/O, argparse, collections |
-| Threat Detection | Identifying brute-force patterns and IOCs |
-| Incident Triage | Distinguishing failed attempts from successful compromises |
-| SOC Workflow | Structured reporting with actionable recommendations |
-
----
-
-## 🗂 Use Cases
-
-- **Daily log review** — quick morning check for overnight brute-force activity
-- **Incident response** — first step when investigating a suspected compromise
-- **Threat hunting** — proactively scanning logs for attacker IP patterns
-- **Security awareness** — demonstrating attack volume to stakeholders
+| Log parsing | Reading and searching through raw log files |
+| Regex | Extracting IPs, usernames and timestamps from text |
+| Threat detection | Finding patterns that look like attacks |
+| Incident triage | Telling the difference between an attempt and a real breach |
 
 ---
 
@@ -156,37 +95,18 @@ By building and using this tool, you demonstrate:
 
 ```
 01-brute-force-detector/
-├── brute_force_detector.py   # Main detection script
-├── requirements.txt          # No external dependencies
+├── brute_force_detector.py
+├── requirements.txt
 ├── .gitignore
 └── README.md
 ```
 
 ---
 
-## 🔗 Related SOC Concepts
-
-- **MITRE ATT&CK T1110** — Brute Force
-- **MITRE ATT&CK T1078** — Valid Accounts (post-compromise)
-- **Fail2Ban** — Production tool that automates IP blocking
-- **SIEM correlation rules** — How this logic is implemented at scale
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome! Ideas for improvement:
-- Add JSON/CSV export for SIEM ingestion
-- Add GeoIP lookup for attacking IPs
-- Add email alerting for critical findings
-- Support for Windows Event Log format
-
----
-
 ## 📄 License
 
-MIT License — free to use, modify, and distribute.
+MIT
 
 ---
 
-*Part of the [SOC Projects Portfolio](https://github.com/NourKhalil0/soc-projects) — daily cybersecurity projects for aspiring junior SOC analysts.*
+*Part of the SOC Projects Portfolio by NourKhalil0*
