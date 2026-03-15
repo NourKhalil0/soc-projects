@@ -106,7 +106,7 @@ def print_report(all_events, filepaths):
     if len(all_events) > 20:
         print(f"... and {len(all_events) - 20} more events.\n")
 
-    print("========================================\n")
+  
 
 
 def create_demo_logs(folder):
