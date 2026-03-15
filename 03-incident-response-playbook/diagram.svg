@@ -1,0 +1,53 @@
+<svg width="900" height="440" viewBox="0 0 900 440" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+<rect width="900" height="440" fill="#f4f6f8"/>
+<text x="108" y="50" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Preparation</text>
+<line x1="115" y1="10" x2="855" y2="10" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="17" width="290" height="56" fill="#1a5276" rx="2"/>
+<text x="265" y="41" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Asset inventory</text>
+<rect x="414" y="17" width="290" height="56" fill="#2980b9" rx="2"/>
+<text x="559" y="41" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Playbook loaded</text>
+<rect x="708" y="17" width="143" height="56" fill="#85c1e9" rx="2"/>
+<text x="779" y="41" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Team contacts</text>
+<text x="108" y="120" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Detection</text>
+<line x1="115" y1="80" x2="855" y2="80" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="87" width="290" height="56" fill="#1a5276" rx="2"/>
+<text x="265" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Alert received</text>
+<rect x="414" y="87" width="290" height="56" fill="#c0392b" rx="2"/>
+<text x="559" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Initial triage</text>
+<rect x="708" y="87" width="143" height="56" fill="#d98880" rx="2"/>
+<text x="779" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Severity assigned</text>
+<text x="108" y="190" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Containment</text>
+<line x1="115" y1="150" x2="855" y2="150" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="157" width="290" height="56" fill="#c0392b" rx="2"/>
+<text x="265" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Isolate host</text>
+<rect x="414" y="157" width="290" height="56" fill="#c0392b" rx="2"/>
+<text x="559" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Block IOCs</text>
+<rect x="708" y="157" width="143" height="56" fill="#2980b9" rx="2"/>
+<text x="779" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Preserve evidence</text>
+<text x="108" y="260" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Eradication</text>
+<line x1="115" y1="220" x2="855" y2="220" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="227" width="290" height="56" fill="#1a5276" rx="2"/>
+<text x="265" y="251" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Remove malware</text>
+<rect x="414" y="227" width="290" height="56" fill="#2980b9" rx="2"/>
+<text x="559" y="251" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Patch vulnerability</text>
+<rect x="708" y="227" width="143" height="56" fill="#85c1e9" rx="2"/>
+<text x="779" y="251" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Verify clean</text>
+<text x="108" y="330" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Recovery</text>
+<line x1="115" y1="290" x2="855" y2="290" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="297" width="290" height="56" fill="#2980b9" rx="2"/>
+<text x="265" y="321" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Restore systems</text>
+<rect x="414" y="297" width="290" height="56" fill="#1a5276" rx="2"/>
+<text x="559" y="321" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Monitor closely</text>
+<rect x="708" y="297" width="143" height="56" fill="#85c1e9" rx="2"/>
+<text x="779" y="321" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Re-enable services</text>
+<text x="108" y="391" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Lessons</text>
+<text x="108" y="405" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Learned</text>
+<line x1="115" y1="360" x2="855" y2="360" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="367" width="290" height="56" fill="#1a5276" rx="2"/>
+<text x="265" y="391" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Timeline documented</text>
+<rect x="414" y="367" width="290" height="56" fill="#2980b9" rx="2"/>
+<text x="559" y="391" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Root cause identified</text>
+<rect x="708" y="367" width="143" height="56" fill="#85c1e9" rx="2"/>
+<text x="779" y="391" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Controls updated</text>
+<line x1="115" y1="430" x2="855" y2="430" stroke="#ccc" stroke-width="1"/>
+</svg>
