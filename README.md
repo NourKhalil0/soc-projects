@@ -17,6 +17,7 @@ A collection of cybersecurity projects built by a 2nd-year cybersecurity student
 | 03 | [Incident Response Playbook](./03-incident-response-playbook/) | Incident Response | Full 7-phase IR playbook with diagram and checklist tool |
 | 04 | [URL Phishing Analyser](./04-url-analyser/) | Phishing Detection | Checks a URL for suspicious patterns like IP hosts, stacked subdomains, and phishing keywords |
 | 05 | [Port Scanner](./05-port-scanner/) | Network Monitoring | Scans a host for open ports and shows what services are running |
+| 06 | [Hash Identifier](./06-hash-identifier/) | Password Security | Identifies hash types and checks if they match known weak passwords |
 
 > New project added every weekday.
 
