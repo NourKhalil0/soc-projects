@@ -1,0 +1,40 @@
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+<rect width="900" height="300" fill="#f4f6f8"/>
+<text x="108" y="50" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Input</text>
+<line x1="115" y1="10" x2="855" y2="10" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="17" width="290" height="56" fill="#1a5276" rx="2"/>
+<text x="265" y="41" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Target host</text>
+<text x="265" y="55" font-size="9" fill="#d6eaf8" text-anchor="middle">IP or hostname</text>
+<rect x="414" y="17" width="290" height="56" fill="#2980b9" rx="2"/>
+<text x="559" y="41" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Port range</text>
+<text x="559" y="55" font-size="9" fill="#d6eaf8" text-anchor="middle">default 1-1024</text>
+<rect x="708" y="17" width="143" height="56" fill="#85c1e9" rx="2"/>
+<text x="779" y="41" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Timeout setting</text>
+<text x="779" y="55" font-size="9" fill="#d6eaf8" text-anchor="middle">per-port timeout</text>
+<text x="108" y="120" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Scanning</text>
+<line x1="115" y1="80" x2="855" y2="80" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="87" width="437" height="56" fill="#1a5276" rx="2"/>
+<text x="338" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">TCP connect scan</text>
+<text x="338" y="125" font-size="9" fill="#d6eaf8" text-anchor="middle">socket per port</text>
+<rect x="561" y="87" width="290" height="56" fill="#2980b9" rx="2"/>
+<text x="706" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Threading</text>
+<text x="706" y="125" font-size="9" fill="#d6eaf8" text-anchor="middle">concurrent sockets</text>
+<text x="108" y="181" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Service</text>
+<text x="108" y="195" font-size="11" font-weight="bold" fill="#222" text-anchor="end">ID</text>
+<line x1="115" y1="150" x2="855" y2="150" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="157" width="290" height="56" fill="#1a5276" rx="2"/>
+<text x="265" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Banner grabbing</text>
+<text x="265" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">read response</text>
+<rect x="414" y="157" width="437" height="56" fill="#2980b9" rx="2"/>
+<text x="632" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Well-known port map</text>
+<text x="632" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">80=HTTP 22=SSH etc</text>
+<text x="108" y="260" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Output</text>
+<line x1="115" y1="220" x2="855" y2="220" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="227" width="437" height="56" fill="#1a5276" rx="2"/>
+<text x="338" y="251" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Open ports list</text>
+<text x="338" y="265" font-size="9" fill="#d6eaf8" text-anchor="middle">with service names</text>
+<rect x="561" y="227" width="290" height="56" fill="#2980b9" rx="2"/>
+<text x="706" y="251" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Scan summary</text>
+<text x="706" y="265" font-size="9" fill="#d6eaf8" text-anchor="middle">timing and count</text>
+<line x1="115" y1="290" x2="855" y2="290" stroke="#ccc" stroke-width="1"/>
+</svg>
