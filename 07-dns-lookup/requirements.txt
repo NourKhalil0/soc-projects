@@ -1,0 +1,2 @@
+# No external Python packages needed
+# Requires 'dig' to be installed on your system (default on Linux and macOS)
