@@ -18,7 +18,8 @@ A collection of cybersecurity projects built by a 2nd-year cybersecurity student
 | 04 | [URL Phishing Analyser](./04-url-analyser/) | Phishing Detection | Checks a URL for suspicious patterns like IP hosts, stacked subdomains, and phishing keywords |
 | 05 | [Port Scanner](./05-port-scanner/) | Network Monitoring | Scans a host for open ports and shows what services are running |
 | 06 | [Hash Identifier](./06-hash-identifier/) | Password Security | Identifies hash types and checks if they match known weak passwords |
-| 07 | [Auth Log Analyzer](./07-auth-log-analyzer/) | Log Analysis | Parses SSH auth logs to count failed logins, track successful ones, and flag brute force sources |
+| 07 | [DNS Lookup Tool](./07-dns-lookup/) | Threat Intel | Looks up DNS records for a domain and flags phishing keywords |
+| 08 | [Auth Log Analyzer](./08-auth-log-analyzer/) | Log Analysis | Parses SSH auth logs to count failed logins, track successful ones, and flag brute force sources |
 
 > New project added every weekday.
 

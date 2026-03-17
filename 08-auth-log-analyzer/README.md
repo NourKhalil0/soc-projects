@@ -1,4 +1,4 @@
-# 07 Auth Log Analyzer
+# 08 Auth Log Analyzer
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue) ![Category](https://img.shields.io/badge/category-log%20analysis-orange) ![Level](https://img.shields.io/badge/level-beginner-green)
 
@@ -24,7 +24,7 @@ This tool reads SSH authentication logs, counts failed login attempts per IP add
 
 ```bash
 git clone https://github.com/NourKhalil0/soc-projects.git
-cd soc-projects/07-auth-log-analyzer
+cd soc-projects/08-auth-log-analyzer
 ```
 
 ## Usage
@@ -73,7 +73,7 @@ Suspicious IPs (brute force threshold reached):
 ## Project Structure
 
 ```
-07-auth-log-analyzer/
+08-auth-log-analyzer/
 ├── auth_log_analyzer.py
 ├── diagram.png
 ├── README.md
