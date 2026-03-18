@@ -1,0 +1,42 @@
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+<rect width="900" height="300" fill="#f4f6f8"/>
+<text x="108" y="50" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Baseline</text>
+<line x1="115" y1="10" x2="855" y2="10" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="17" width="290" height="56" fill="#1a5276" rx="2"/>
+<text x="265" y="41" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Scan directory</text>
+<text x="265" y="55" font-size="9" fill="#d6eaf8" text-anchor="middle">recursive walk</text>
+<rect x="414" y="17" width="290" height="56" fill="#2980b9" rx="2"/>
+<text x="559" y="41" font-size="10" font-weight="bold" fill="white" text-anchor="middle">SHA256 each file</text>
+<text x="559" y="55" font-size="9" fill="#d6eaf8" text-anchor="middle">hash all files</text>
+<rect x="708" y="17" width="143" height="56" fill="#85c1e9" rx="2"/>
+<text x="779" y="41" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Save baseline</text>
+<text x="779" y="55" font-size="9" fill="#d6eaf8" text-anchor="middle">JSON snapshot</text>
+<text x="108" y="120" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Monitoring</text>
+<line x1="115" y1="80" x2="855" y2="80" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="87" width="437" height="56" fill="#1a5276" rx="2"/>
+<text x="338" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Re-scan directory</text>
+<text x="338" y="125" font-size="9" fill="#d6eaf8" text-anchor="middle">on demand or schedule</text>
+<rect x="561" y="87" width="290" height="56" fill="#2980b9" rx="2"/>
+<text x="706" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Rehash all files</text>
+<text x="706" y="125" font-size="9" fill="#d6eaf8" text-anchor="middle">current state</text>
+<text x="108" y="190" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Comparison</text>
+<line x1="115" y1="150" x2="855" y2="150" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="157" width="143" height="56" fill="#c0392b" rx="2"/>
+<text x="191" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">New files</text>
+<text x="191" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">not in baseline</text>
+<rect x="267" y="157" width="290" height="56" fill="#c0392b" rx="2"/>
+<text x="412" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Modified files</text>
+<text x="412" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">hash changed</text>
+<rect x="561" y="157" width="290" height="56" fill="#d98880" rx="2"/>
+<text x="706" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Deleted files</text>
+<text x="706" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">missing from dir</text>
+<text x="108" y="260" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Output</text>
+<line x1="115" y1="220" x2="855" y2="220" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="227" width="437" height="56" fill="#1a5276" rx="2"/>
+<text x="338" y="251" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Change report</text>
+<text x="338" y="265" font-size="9" fill="#d6eaf8" text-anchor="middle">added modified deleted</text>
+<rect x="561" y="227" width="290" height="56" fill="#c0392b" rx="2"/>
+<text x="706" y="251" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Alert on change</text>
+<text x="706" y="265" font-size="9" fill="#d6eaf8" text-anchor="middle">flag for review</text>
+<line x1="115" y1="290" x2="855" y2="290" stroke="#ccc" stroke-width="1"/>
+</svg>

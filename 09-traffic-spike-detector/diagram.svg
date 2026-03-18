@@ -1,0 +1,39 @@
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+<rect width="900" height="300" fill="#f4f6f8"/>
+<text x="108" y="50" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Input</text>
+<line x1="115" y1="10" x2="855" y2="10" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="17" width="584" height="56" fill="#1a5276" rx="2"/>
+<text x="412" y="41" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Network traffic data</text>
+<text x="412" y="55" font-size="9" fill="#d6eaf8" text-anchor="middle">packets per interval</text>
+<rect x="708" y="17" width="143" height="56" fill="#2980b9" rx="2"/>
+<text x="779" y="41" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Baseline window</text>
+<text x="779" y="55" font-size="9" fill="#d6eaf8" text-anchor="middle">rolling average</text>
+<text x="108" y="120" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Baseline</text>
+<line x1="115" y1="80" x2="855" y2="80" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="87" width="437" height="56" fill="#1a5276" rx="2"/>
+<text x="338" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Rolling average</text>
+<text x="338" y="125" font-size="9" fill="#d6eaf8" text-anchor="middle">N-minute window</text>
+<rect x="561" y="87" width="290" height="56" fill="#2980b9" rx="2"/>
+<text x="706" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Standard deviation</text>
+<text x="706" y="125" font-size="9" fill="#d6eaf8" text-anchor="middle">normal variation</text>
+<text x="108" y="190" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Detection</text>
+<line x1="115" y1="150" x2="855" y2="150" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="157" width="290" height="56" fill="#1a5276" rx="2"/>
+<text x="265" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Current vs baseline</text>
+<text x="265" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">ratio calculation</text>
+<rect x="414" y="157" width="290" height="56" fill="#c0392b" rx="2"/>
+<text x="559" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Spike threshold</text>
+<text x="559" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">e.g. 3x normal</text>
+<rect x="708" y="157" width="143" height="56" fill="#d98880" rx="2"/>
+<text x="779" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Sustained check</text>
+<text x="779" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">not single packet burst</text>
+<text x="108" y="260" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Output</text>
+<line x1="115" y1="220" x2="855" y2="220" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="227" width="437" height="56" fill="#c0392b" rx="2"/>
+<text x="338" y="251" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Spike alert</text>
+<text x="338" y="265" font-size="9" fill="#d6eaf8" text-anchor="middle">timestamp + magnitude</text>
+<rect x="561" y="227" width="290" height="56" fill="#2980b9" rx="2"/>
+<text x="706" y="251" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Traffic graph</text>
+<text x="706" y="265" font-size="9" fill="#d6eaf8" text-anchor="middle">visual output</text>
+<line x1="115" y1="290" x2="855" y2="290" stroke="#ccc" stroke-width="1"/>
+</svg>
