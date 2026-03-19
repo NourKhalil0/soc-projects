@@ -1,4 +1,4 @@
-# 📈 Traffic Spike Detector
+# Traffic Spike Detector
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
 ![License](https://img.shields.io/badge/License-MIT-green)
@@ -6,7 +6,17 @@
 
 This tool looks at network traffic over 24 hours and finds hours where the traffic is way higher than normal. It saves a graph and a diagram as image files.
 
+---
+
+## How It Works
+
 ![Diagram](./diagram.png)
+
+---
+
+## Traffic Graph
+
+![Graph](./traffic_graph.png)
 
 ---
 
@@ -50,20 +60,16 @@ python3 traffic_spike_detector.py
 
 ```
 ==============================================
-    TRAFFIC SPIKE DETECTOR — REPORT
+    TRAFFIC SPIKE DETECTOR --- REPORT
 ==============================================
 Threshold : 1000 packets/hour
 Period    : 24 hours
 
-  SPIKE at 03:00  —  1950 packets  [ALERT]
-  SPIKE at 14:00  —  2300 packets  [ALERT]
-  SPIKE at 20:00  —  1700 packets  [ALERT]
+  SPIKE at 03:00  ---  1950 packets  [ALERT]
+  SPIKE at 14:00  ---  2300 packets  [ALERT]
+  SPIKE at 20:00  ---  1700 packets  [ALERT]
 ==============================================
 ```
-
-Two image files are also saved:
-- `traffic_graph.png` — bar chart with spikes in red
-- `diagram.png` — shows how the tool works step by step
 
 ---
 
@@ -83,6 +89,8 @@ Two image files are also saved:
 ```
 09-traffic-spike-detector/
 ├── traffic_spike_detector.py
+├── traffic_graph.png
+├── diagram.png
 ├── requirements.txt
 └── README.md
 ```
