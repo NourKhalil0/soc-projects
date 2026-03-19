@@ -21,6 +21,7 @@ A collection of cybersecurity projects built by a 2nd-year cybersecurity student
 | 07 | [DNS Lookup Tool](./07-dns-lookup/) | Threat Intel | Looks up DNS records for a domain and flags phishing keywords |
 | 08 | [Auth Log Analyzer](./08-auth-log-analyzer/) | Log Analysis | Parses SSH auth logs to count failed logins, track successful ones, and flag brute force sources |
 | 09 | [File Integrity Monitor](./09-file-integrity-monitor/) | Endpoint Security | Hashes every file in a directory and alerts when files are added, modified, or deleted |
+| 10 | [IP Reputation Checker](./10-ip-reputation-checker/) | OSINT and Threat Intel | Checks IP addresses against a local threat database and assigns a risk score with category and country |
 
 > New project added every weekday.
 
