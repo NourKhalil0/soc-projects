@@ -6,7 +6,7 @@
 
 A command line tool that checks IP addresses against a local threat database and assigns a risk score. You give it one IP or a list, and it tells you what it found.
 
-[🗺️ View Interactive Diagram](ip_checker_diagram.html)
+![Diagram](diagram.png)
 
 ## Features
 
@@ -86,7 +86,7 @@ Summary: 2 of 3 IPs flagged
 ```
 10-ip-reputation-checker/
 ├── ip_reputation.py   # Main script
-├── ip_checker_diagram.html  # Interactive workflow diagram
+├── diagram.png        # Workflow diagram
 ├── README.md          # This file
 ├── requirements.txt   # Dependencies
 └── .gitignore         # Python gitignore
