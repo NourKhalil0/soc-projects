@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<title>IP Reputation Checker – Diagram</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@700;900&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0a0e1a;
+    font-family: 'Share Tech Mono', monospace;
+    color: #e0f0ff;
+    min-height: 100vh;
+    padding: 40px 20px 60px;
+  }
+
+  h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.6rem;
+    text-align: center;
+    letter-spacing: 0.12em;
+    color: #00d4ff;
+    text-shadow: 0 0 24px #00d4ff99, 0 0 60px #00d4ff44;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #5596cc;
+    margin-bottom: 50px;
+    letter-spacing: 0.08em;
+  }
+
+  /* ── MAIN LAYOUT ── */
+  .diagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* ── BOXES ── */
+  .box {
+    border-radius: 14px;
+    padding: 22px 32px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .box-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+  }
+
+  .box-desc {
+    font-size: 1rem;
+    color: #aac8e8;
+    line-height: 1.55;
+  }
+
+  /* INPUT section */
+  .input-row {
+    display: flex;
+    gap: 18px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .input-box {
+    flex: 1;
+    min-width: 200px;
+    max-width: 260px;
+    border: 2.5px solid #3a7bd5;
+    background: linear-gradient(135deg, #0d1b35 0%, #112040 100%);
+    box-shadow: 0 0 18px #3a7bd533;
+    border-radius: 14px;
+    padding: 20px 18px;
+    text-align: center;
+  }
+
+  .input-box .label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    color: #60aaff;
+    margin-bottom: 6px;
+    font-weight: 700;
+  }
+
+  .input-box .flag {
+    font-size: 1.4rem;
+    color: #00d4ff;
+    background: #0a1e40;
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    letter-spacing: 0.05em;
+  }
+
+  .input-box .desc {
+    font-size: 0.88rem;
+    color: #6d9ec8;
+  }
+
+  /* Arrow */
+  .arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4px 0;
+  }
+
+  .arrow-line {
+    width: 4px;
+    height: 36px;
+    background: linear-gradient(to bottom, #3a7bd5, #00d4ff);
+    border-radius: 2px;
+  }
+
+  .arrow-head {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 18px solid #00d4ff;
+    filter: drop-shadow(0 0 6px #00d4ff);
+  }
+
+  .arrow-label {
+    font-size: 0.85rem;
+    color: #4a88c8;
+    margin-top: 4px;
+    letter-spacing: 0.06em;
+  }
+
+  /* Merge arrows */
+  .merge-zone {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 0;
+  }
+
+  .merge-line {
+    width: 70%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #3a7bd5 30%, #3a7bd5 70%, transparent);
+    border-radius: 2px;
+  }
+
+  /* Core function boxes */
+  .fn-check {
+    border: 2.5px solid #00d4ff;
+    background: linear-gradient(135deg, #061c30 0%, #0a2540 100%);
+    box-shadow: 0 0 28px #00d4ff44, inset 0 0 20px #00d4ff11;
+    max-width: 560px;
+  }
+
+  .fn-check .box-title { color: #00d4ff; }
+
+  .fn-db {
+    border: 2.5px solid #a855f7;
+    background: linear-gradient(135deg, #120820 0%, #1a0d2e 100%);
+    box-shadow: 0 0 28px #a855f744, inset 0 0 20px #a855f711;
+    max-width: 560px;
+  }
+
+  .fn-db .box-title { color: #d08eff; }
+
+  .fn-risk {
+    border: 2.5px solid #f59e0b;
+    background: linear-gradient(135deg, #1a1200 0%, #221800 100%);
+    box-shadow: 0 0 28px #f59e0b44, inset 0 0 20px #f59e0b11;
+    max-width: 560px;
+  }
+
+  .fn-risk .box-title { color: #fbbf24; }
+
+  /* Risk levels row */
+  .risk-row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 660px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .risk-badge {
+    flex: 1;
+    min-width: 100px;
+    max-width: 130px;
+    border-radius: 10px;
+    padding: 12px 8px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+  }
+
+  .risk-critical { background: #3a0808; border: 2px solid #ff2222; color: #ff6666; box-shadow: 0 0 14px #ff222266; }
+  .risk-high     { background: #3a1e00; border: 2px solid #ff8c00; color: #ffa040; box-shadow: 0 0 14px #ff8c0066; }
+  .risk-medium   { background: #2e2a00; border: 2px solid #f0cc00; color: #ffe040; box-shadow: 0 0 14px #f0cc0066; }
+  .risk-low      { background: #0e2a0e; border: 2px solid #44dd44; color: #88ff88; box-shadow: 0 0 14px #44dd4466; }
+  .risk-clean    { background: #0a1e0a; border: 2px solid #22cc88; color: #66ffcc; box-shadow: 0 0 14px #22cc8866; }
+
+  .risk-score {
+    font-size: 0.7rem;
+    font-family: 'Share Tech Mono', monospace;
+    color: #aaa;
+    margin-top: 4px;
+    font-weight: normal;
+  }
+
+  /* Output boxes */
+  .output-row {
+    display: flex;
+    gap: 18px;
+    width: 100%;
+    max-width: 660px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .out-box {
+    flex: 1;
+    min-width: 240px;
+    border: 2.5px solid #10b981;
+    background: linear-gradient(135deg, #051a10 0%, #081e14 100%);
+    box-shadow: 0 0 22px #10b98144;
+    border-radius: 14px;
+    padding: 18px 16px;
+    text-align: center;
+  }
+
+  .out-box .label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.05rem;
+    color: #34d399;
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+
+  .out-box pre {
+    font-size: 0.78rem;
+    color: #5eead4;
+    text-align: left;
+    background: #020e08;
+    border-radius: 8px;
+    padding: 10px 12px;
+    overflow: hidden;
+    line-height: 1.5;
+    white-space: pre-wrap;
+  }
+
+  /* Side annotation */
+  .side-note {
+    font-size: 0.82rem;
+    color: #4a7a9b;
+    text-align: center;
+    margin-top: 4px;
+    font-style: italic;
+  }
+
+  /* DB entries */
+  .db-entries {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .db-entry {
+    background: #1a0d2e;
+    border: 1px solid #7c3aed66;
+    border-radius: 8px;
+    padding: 5px 12px;
+    font-size: 0.82rem;
+    color: #c084fc;
+  }
+
+  .db-entry span {
+    color: #e879f9;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<h1>IP REPUTATION CHECKER</h1>
+<p class="subtitle">Hvordan prosjektet fungerer – flyt fra input til resultat</p>
+
+<div class="diagram">
+
+  <!-- ── STEP 1: INPUT ── -->
+  <div class="input-row">
+    <div class="input-box">
+      <div class="label">ALTERNATIV 1</div>
+      <div class="flag">--ip</div>
+      <div class="desc">Sjekk én enkelt<br>IP-adresse direkte</div>
+    </div>
+    <div class="input-box">
+      <div class="label">ALTERNATIV 2</div>
+      <div class="flag">--file</div>
+      <div class="desc">Les IP-adresser<br>fra en tekstfil</div>
+    </div>
+    <div class="input-box">
+      <div class="label">ALTERNATIV 3</div>
+      <div class="flag">--demo</div>
+      <div class="desc">Bruk innebygde<br>demo IP-adresser</div>
+    </div>
+  </div>
+
+  <!-- merge -->
+  <div class="merge-zone">
+    <div class="merge-line"></div>
+    <div class="arrow">
+      <div class="arrow-line"></div>
+      <div class="arrow-head"></div>
+    </div>
+    <div class="arrow-label">Liste med IP-adresser</div>
+  </div>
+
+  <!-- ── STEP 2: CHECK IP ── -->
+  <div class="box fn-check">
+    <div class="box-title">🔍 check_ip()</div>
+    <div class="box-desc">
+      Slår opp IP-adressen i THREAT_DB.<br>
+      Finner kategori, land og trusselscore (0–100).<br>
+      Returnerer «No threat data» for ukjente IP-er.
+    </div>
+  </div>
+
+  <div class="arrow">
+    <div class="arrow-line"></div>
+    <div class="arrow-head"></div>
+    <div class="arrow-label">Slår opp i databasen</div>
+  </div>
+
+  <!-- ── STEP 3: THREAT DB ── -->
+  <div class="box fn-db">
+    <div class="box-title">🗄️ THREAT_DB</div>
+    <div class="box-desc">Innebygd database med kjente trusler</div>
+    <div class="db-entries">
+      <div class="db-entry">185.220.101.45 → <span>Tor Exit Node</span> [95]</div>
+      <div class="db-entry">194.165.16.11 → <span>C2 Server</span> [98]</div>
+      <div class="db-entry">45.142.212.100 → <span>Botnet</span> [92]</div>
+      <div class="db-entry">5.188.206.26 → <span>Brute Force</span> [88]</div>
+      <div class="db-entry">185.156.73.26 → <span>Scanner</span> [75]</div>
+      <div class="db-entry">192.168.1.1 → <span>Private Range</span> [0]</div>
+    </div>
+  </div>
+
+  <div class="arrow">
+    <div class="arrow-line"></div>
+    <div class="arrow-head"></div>
+    <div class="arrow-label">Score sendes videre</div>
+  </div>
+
+  <!-- ── STEP 4: RISK LEVEL ── -->
+  <div class="box fn-risk">
+    <div class="box-title">⚠️ get_risk_level()</div>
+    <div class="box-desc">Beregner risikonivå basert på score</div>
+  </div>
+
+  <div class="arrow">
+    <div class="arrow-line" style="height:20px"></div>
+    <div class="arrow-head"></div>
+  </div>
+
+  <!-- Risk badges -->
+  <div class="risk-row">
+    <div class="risk-badge risk-critical">CRITICAL<div class="risk-score">score ≥ 90</div></div>
+    <div class="risk-badge risk-high">HIGH<div class="risk-score">score ≥ 70</div></div>
+    <div class="risk-badge risk-medium">MEDIUM<div class="risk-score">score ≥ 40</div></div>
+    <div class="risk-badge risk-low">LOW<div class="risk-score">score &gt; 0</div></div>
+    <div class="risk-badge risk-clean">CLEAN<div class="risk-score">score = 0</div></div>
+  </div>
+
+  <div class="arrow">
+    <div class="arrow-line"></div>
+    <div class="arrow-head"></div>
+    <div class="arrow-label">Skriv ut resultater</div>
+  </div>
+
+  <!-- ── STEP 5: OUTPUT ── -->
+  <div class="output-row">
+    <div class="out-box">
+      <div class="label">📋 print_result()</div>
+      <pre>IP: 194.165.16.11
+Risk: CRITICAL  Score: 98/100
+Category: C2 Server
+Country: RU</pre>
+    </div>
+    <div class="out-box">
+      <div class="label">📊 print_summary()</div>
+      <pre>==========================================
+Summary: 5 of 7 IPs flagged
+
+[CRITICAL]  194.165.16.11   C2 Server
+[CRITICAL]  185.220.101.45  Tor Exit Node
+[HIGH    ]  185.156.73.26   Scanner</pre>
+    </div>
+  </div>
+
+  <p class="side-note" style="margin-top:28px">
+    🔄 Loopen kjøres for hver IP-adresse – check_ip → get_risk_level → print_result → print_summary
+  </p>
+
+</div>
+</body>
+</html>
