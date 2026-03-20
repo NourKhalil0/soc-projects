@@ -8,6 +8,10 @@ This tool reads a Linux SSH log file and finds IP addresses that have failed to 
 
 ---
 
+![How Brute Force Detection Works](diagram.png)
+
+---
+
 ## ✨ Features
 
 - Flags IP addresses that fail to log in more than a set number of times
