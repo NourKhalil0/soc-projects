@@ -22,6 +22,7 @@ A collection of cybersecurity projects built by a 2nd-year cybersecurity student
 | 08 | [Auth Log Analyzer](./08-auth-log-analyzer/) | Log Analysis | Parses SSH auth logs to count failed logins, track successful ones, and flag brute force sources |
 | 09 | [File Integrity Monitor](./09-file-integrity-monitor/) | Endpoint Security | Hashes every file in a directory and alerts when files are added, modified, or deleted |
 | 10 | [IP Reputation Checker](./10-ip-reputation-checker/) | OSINT and Threat Intel | Checks IP addresses against a local threat database and assigns a risk score with category and country |
+| 11 | [Email Header Parser](./11-email-header-parser/) | Phishing Detection | Parses raw email headers and checks for SPF, DKIM, DMARC failures and address mismatches |
 
 > New project added every weekday.
 
