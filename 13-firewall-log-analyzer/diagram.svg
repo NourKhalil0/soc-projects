@@ -1,0 +1,45 @@
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+<rect width="900" height="300" fill="#f4f6f8"/>
+<text x="108" y="50" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Input</text>
+<line x1="115" y1="10" x2="855" y2="10" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="17" width="584" height="56" fill="#1a5276" rx="2"/>
+<text x="412" y="41" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Firewall log file</text>
+<text x="412" y="55" font-size="9" fill="#d6eaf8" text-anchor="middle">iptables / ufw / pf</text>
+<rect x="708" y="17" width="143" height="56" fill="#2980b9" rx="2"/>
+<text x="779" y="41" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Time filter</text>
+<text x="779" y="55" font-size="9" fill="#d6eaf8" text-anchor="middle">--hours option</text>
+<text x="108" y="120" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Parsing</text>
+<line x1="115" y1="80" x2="855" y2="80" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="87" width="290" height="56" fill="#1a5276" rx="2"/>
+<text x="265" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">BLOCK / ALLOW events</text>
+<text x="265" y="125" font-size="9" fill="#d6eaf8" text-anchor="middle">action extraction</text>
+<rect x="414" y="87" width="290" height="56" fill="#2980b9" rx="2"/>
+<text x="559" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Source IP + port</text>
+<text x="559" y="125" font-size="9" fill="#d6eaf8" text-anchor="middle">per line</text>
+<rect x="708" y="87" width="143" height="56" fill="#85c1e9" rx="2"/>
+<text x="779" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Destination port</text>
+<text x="779" y="125" font-size="9" fill="#d6eaf8" text-anchor="middle">target service</text>
+<text x="108" y="190" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Analysis</text>
+<line x1="115" y1="150" x2="855" y2="150" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="157" width="290" height="56" fill="#c0392b" rx="2"/>
+<text x="265" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Top blocked IPs</text>
+<text x="265" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">count per source</text>
+<rect x="414" y="157" width="290" height="56" fill="#1a5276" rx="2"/>
+<text x="559" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Targeted ports</text>
+<text x="559" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">most hit services</text>
+<rect x="708" y="157" width="143" height="56" fill="#c0392b" rx="2"/>
+<text x="779" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Port scan detection</text>
+<text x="779" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">many ports one IP</text>
+<text x="108" y="260" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Output</text>
+<line x1="115" y1="220" x2="855" y2="220" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="227" width="290" height="56" fill="#c0392b" rx="2"/>
+<text x="265" y="251" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Blocked IP report</text>
+<text x="265" y="265" font-size="9" fill="#d6eaf8" text-anchor="middle">top offenders</text>
+<rect x="414" y="227" width="290" height="56" fill="#1a5276" rx="2"/>
+<text x="559" y="251" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Port summary</text>
+<text x="559" y="265" font-size="9" fill="#d6eaf8" text-anchor="middle">targeted services</text>
+<rect x="708" y="227" width="143" height="56" fill="#d98880" rx="2"/>
+<text x="779" y="251" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Scan / brute flags</text>
+<text x="779" y="265" font-size="9" fill="#d6eaf8" text-anchor="middle">attack type</text>
+<line x1="115" y1="290" x2="855" y2="290" stroke="#ccc" stroke-width="1"/>
+</svg>
