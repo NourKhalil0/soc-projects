@@ -1,0 +1,49 @@
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+<rect width="900" height="300" fill="#f4f6f8"/>
+<text x="108" y="50" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Input</text>
+<line x1="115" y1="10" x2="855" y2="10" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="17" width="731" height="56" fill="#1a5276" rx="2"/>
+<text x="485" y="41" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Password string</text>
+<text x="485" y="55" font-size="9" fill="#d6eaf8" text-anchor="middle">user input</text>
+<text x="108" y="120" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Checks</text>
+<line x1="115" y1="80" x2="855" y2="80" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="87" width="143" height="56" fill="#1a5276" rx="2"/>
+<text x="191" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Length</text>
+<text x="191" y="125" font-size="9" fill="#d6eaf8" text-anchor="middle">< 8 / 8-12 / 12+</text>
+<rect x="267" y="87" width="143" height="56" fill="#2980b9" rx="2"/>
+<text x="338" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Uppercase</text>
+<text x="338" y="125" font-size="9" fill="#d6eaf8" text-anchor="middle">A-Z present</text>
+<rect x="414" y="87" width="143" height="56" fill="#2980b9" rx="2"/>
+<text x="485" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Lowercase</text>
+<text x="485" y="125" font-size="9" fill="#d6eaf8" text-anchor="middle">a-z present</text>
+<rect x="561" y="87" width="143" height="56" fill="#85c1e9" rx="2"/>
+<text x="632" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Digits</text>
+<text x="632" y="125" font-size="9" fill="#d6eaf8" text-anchor="middle">0-9 present</text>
+<rect x="708" y="87" width="143" height="56" fill="#85c1e9" rx="2"/>
+<text x="779" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Symbols</text>
+<text x="779" y="125" font-size="9" fill="#d6eaf8" text-anchor="middle">!@#$ etc</text>
+<text x="108" y="181" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Pattern</text>
+<text x="108" y="195" font-size="11" font-weight="bold" fill="#222" text-anchor="end">checks</text>
+<line x1="115" y1="150" x2="855" y2="150" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="157" width="290" height="56" fill="#c0392b" rx="2"/>
+<text x="265" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Common passwords</text>
+<text x="265" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">top 1000 list</text>
+<rect x="414" y="157" width="290" height="56" fill="#c0392b" rx="2"/>
+<text x="559" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Keyboard walks</text>
+<text x="559" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">qwerty 12345</text>
+<rect x="708" y="157" width="143" height="56" fill="#d98880" rx="2"/>
+<text x="779" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Repeated chars</text>
+<text x="779" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">aaa 111</text>
+<text x="108" y="260" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Output</text>
+<line x1="115" y1="220" x2="855" y2="220" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="227" width="290" height="56" fill="#1a5276" rx="2"/>
+<text x="265" y="251" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Score 0-100</text>
+<text x="265" y="265" font-size="9" fill="#d6eaf8" text-anchor="middle">weighted result</text>
+<rect x="414" y="227" width="290" height="56" fill="#2980b9" rx="2"/>
+<text x="559" y="251" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Rating</text>
+<text x="559" y="265" font-size="9" fill="#d6eaf8" text-anchor="middle">weak / fair / strong</text>
+<rect x="708" y="227" width="143" height="56" fill="#85c1e9" rx="2"/>
+<text x="779" y="251" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Feedback</text>
+<text x="779" y="265" font-size="9" fill="#d6eaf8" text-anchor="middle">what to fix</text>
+<line x1="115" y1="290" x2="855" y2="290" stroke="#ccc" stroke-width="1"/>
+</svg>
