@@ -1,0 +1,39 @@
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+<rect width="900" height="300" fill="#f4f6f8"/>
+<text x="108" y="50" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Input</text>
+<line x1="115" y1="10" x2="855" y2="10" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="17" width="437" height="56" fill="#1a5276" rx="2"/>
+<text x="338" y="41" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Security alerts</text>
+<text x="338" y="55" font-size="9" fill="#d6eaf8" text-anchor="middle">JSON or CSV</text>
+<rect x="561" y="17" width="290" height="56" fill="#2980b9" rx="2"/>
+<text x="706" y="41" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Time window</text>
+<text x="706" y="55" font-size="9" fill="#d6eaf8" text-anchor="middle">correlation window</text>
+<text x="108" y="120" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Grouping</text>
+<line x1="115" y1="80" x2="855" y2="80" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="87" width="437" height="56" fill="#1a5276" rx="2"/>
+<text x="338" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Group by source IP</text>
+<text x="338" y="125" font-size="9" fill="#d6eaf8" text-anchor="middle">all alerts per IP</text>
+<rect x="561" y="87" width="290" height="56" fill="#2980b9" rx="2"/>
+<text x="706" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Group by time</text>
+<text x="706" y="125" font-size="9" fill="#d6eaf8" text-anchor="middle">burst detection</text>
+<text x="108" y="190" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Classification</text>
+<line x1="115" y1="150" x2="855" y2="150" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="157" width="143" height="56" fill="#2980b9" rx="2"/>
+<text x="191" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Single alert type</text>
+<text x="191" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">low severity</text>
+<rect x="267" y="157" width="290" height="56" fill="#c0392b" rx="2"/>
+<text x="412" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Multiple alert types</text>
+<text x="412" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">escalated severity</text>
+<rect x="561" y="157" width="290" height="56" fill="#c0392b" rx="2"/>
+<text x="706" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">High frequency</text>
+<text x="706" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">critical</text>
+<text x="108" y="260" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Output</text>
+<line x1="115" y1="220" x2="855" y2="220" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="227" width="437" height="56" fill="#1a5276" rx="2"/>
+<text x="338" y="251" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Correlated groups</text>
+<text x="338" y="265" font-size="9" fill="#d6eaf8" text-anchor="middle">per source IP</text>
+<rect x="561" y="227" width="290" height="56" fill="#c0392b" rx="2"/>
+<text x="706" y="251" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Severity verdict</text>
+<text x="706" y="265" font-size="9" fill="#d6eaf8" text-anchor="middle">per group</text>
+<line x1="115" y1="290" x2="855" y2="290" stroke="#ccc" stroke-width="1"/>
+</svg>
