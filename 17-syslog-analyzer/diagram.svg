@@ -1,0 +1,42 @@
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+<rect width="900" height="300" fill="#f4f6f8"/>
+<text x="108" y="50" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Input</text>
+<line x1="115" y1="10" x2="855" y2="10" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="17" width="584" height="56" fill="#1a5276" rx="2"/>
+<text x="412" y="41" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Syslog file</text>
+<text x="412" y="55" font-size="9" fill="#d6eaf8" text-anchor="middle">/var/log/syslog</text>
+<rect x="708" y="17" width="143" height="56" fill="#2980b9" rx="2"/>
+<text x="779" y="41" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Time range</text>
+<text x="779" y="55" font-size="9" fill="#d6eaf8" text-anchor="middle">--hours filter</text>
+<text x="108" y="120" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Parsing</text>
+<line x1="115" y1="80" x2="855" y2="80" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="87" width="290" height="56" fill="#1a5276" rx="2"/>
+<text x="265" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">SSH events</text>
+<text x="265" y="125" font-size="9" fill="#d6eaf8" text-anchor="middle">failed / accepted</text>
+<rect x="414" y="87" width="290" height="56" fill="#c0392b" rx="2"/>
+<text x="559" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Sudo events</text>
+<text x="559" y="125" font-size="9" fill="#d6eaf8" text-anchor="middle">bad sudo attempts</text>
+<rect x="708" y="87" width="143" height="56" fill="#d98880" rx="2"/>
+<text x="779" y="111" font-size="10" font-weight="bold" fill="white" text-anchor="middle">User events</text>
+<text x="779" y="125" font-size="9" fill="#d6eaf8" text-anchor="middle">account creation</text>
+<text x="108" y="190" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Detection</text>
+<line x1="115" y1="150" x2="855" y2="150" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="157" width="290" height="56" fill="#c0392b" rx="2"/>
+<text x="265" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">SSH brute force</text>
+<text x="265" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">N fails same IP</text>
+<rect x="414" y="157" width="290" height="56" fill="#c0392b" rx="2"/>
+<text x="559" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Sudo abuse</text>
+<text x="559" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">repeated failures</text>
+<rect x="708" y="157" width="143" height="56" fill="#c0392b" rx="2"/>
+<text x="779" y="181" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Root account creation</text>
+<text x="779" y="195" font-size="9" fill="#d6eaf8" text-anchor="middle">useradd / adduser</text>
+<text x="108" y="260" font-size="11" font-weight="bold" fill="#222" text-anchor="end">Output</text>
+<line x1="115" y1="220" x2="855" y2="220" stroke="#ccc" stroke-width="1"/>
+<rect x="120" y="227" width="437" height="56" fill="#c0392b" rx="2"/>
+<text x="338" y="251" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Flagged events</text>
+<text x="338" y="265" font-size="9" fill="#d6eaf8" text-anchor="middle">with timestamps</text>
+<rect x="561" y="227" width="290" height="56" fill="#1a5276" rx="2"/>
+<text x="706" y="251" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Event summary</text>
+<text x="706" y="265" font-size="9" fill="#d6eaf8" text-anchor="middle">counts per category</text>
+<line x1="115" y1="290" x2="855" y2="290" stroke="#ccc" stroke-width="1"/>
+</svg>
