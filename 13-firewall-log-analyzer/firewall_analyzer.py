@@ -1,5 +1,6 @@
 import argparse
 import re
+# tested on ufw logs, might need adjustment for iptables raw format
 from collections import defaultdict
 
 DEMO_LOGS = [

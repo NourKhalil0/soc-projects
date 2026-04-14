@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+# TODO: dnspython would be cleaner but keeping stdlib only for portability
 import socket
 import subprocess
 import sys

@@ -1,5 +1,6 @@
 import argparse
 import re
+# common passwords list is top 1000, should probably expand this
 import string
 
 COMMON_PASSWORDS = [

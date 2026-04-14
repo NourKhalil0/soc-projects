@@ -4,7 +4,7 @@ A command line tool that reads raw email headers and checks them for signs of ph
 
 ![Email Header Parser Diagram](./diagram.svg)
 
-## Features
+## Checks
 
 This tool parses raw email headers from a text file or from built-in demo data. It checks the Authentication-Results header for SPF, DKIM, and DMARC failures. It compares the From address against Reply-To and Return-Path to catch mismatches. It scans the subject line for common phishing keywords like "urgent," "verify," and "suspend." It scores the email as CLEAN, LOW, MEDIUM, or HIGH risk based on how many issues it finds. You can also get the results as JSON for piping into other tools.
 
@@ -65,7 +65,7 @@ Risk Level: HIGH
 ==================================================
 ```
 
-## What You Learn
+## Background
 
 | Skill | Description |
 |-------|-------------|

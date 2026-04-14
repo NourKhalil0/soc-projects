@@ -2,6 +2,8 @@
 
 import argparse
 import socket
+# TODO: add UDP scanning, currently only TCP
+# also threading could be improved
 from datetime import datetime
 
 COMMON_PORTS = {

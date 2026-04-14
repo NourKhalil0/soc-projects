@@ -2,6 +2,7 @@
 
 import argparse
 import re
+# TODO: add json output format option
 import os
 from datetime import datetime
 

@@ -1,4 +1,4 @@
-#  URL Phishing Analyser
+# URL Phishing Analyser
 
 A command-line tool that checks a URL for common phishing patterns. It looks at things like whether the host is an IP address, how many subdomains are stacked up, whether the TLD is suspicious, and whether the URL contains keywords often seen in phishing links.
 

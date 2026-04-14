@@ -2,6 +2,7 @@
 
 import argparse
 import hashlib
+# TODO: add option to exclude file extensions (e.g. .log files that change constantly)
 import json
 import os
 from datetime import datetime

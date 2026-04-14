@@ -1,4 +1,4 @@
-#  IOC Extractor
+# IOC Extractor
 
 A simple Python tool that pulls Indicators of Compromise (IOCs) out of raw text. Feed it a log file, an alert email, or any block of text and it will find IP addresses, domains, URLs, hashes, and email addresses.
 
@@ -111,6 +111,10 @@ Total IOCs extracted: 15
 ├── .gitignore
 └── README.md
 ```
+
+## Known issues
+
+The domain regex sometimes picks up things that are not domains (e.g. version strings like "3.8.1" get flagged). Filtering is basic. Will improve.
 
 ## License
 

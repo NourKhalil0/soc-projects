@@ -1,5 +1,6 @@
 import argparse
 import re
+# this one took a while to get right - syslog format is inconsistent across distros
 
 DEMO_LOGS = [
     "Apr 10 09:01:22 server sudo: user1 : TTY=pts/0 ; PWD=/home/user1 ; USER=root ; COMMAND=/bin/bash",

@@ -1,4 +1,4 @@
-#  Incident Response Playbook
+# Incident Response Playbook
 
 This project shows the full process a SOC analyst follows when an incident happens. It covers all 7 phases from start to finish, based on the NIST incident response framework. The diagram below is the main part of this project.
 
@@ -82,7 +82,7 @@ Phase 3 — Analyse
 
 ---
 
-## What you learn
+## Why I built this
 
 | Skill | Description |
 |-------|-------------|

@@ -1,5 +1,6 @@
 import argparse
 import json
+# header parsing is messier than expected, lots of edge cases
 
 DEMO_HEADERS = """From: support@paypa1-secure.com
 To: victim@company.com

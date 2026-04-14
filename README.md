@@ -1,10 +1,10 @@
-# ️ SOC Projects Portfolio
+# SOC Projects Portfolio
 
-A collection of cybersecurity projects built by a 2nd-year cybersecurity student. One new project is added every weekday. Each project is practical and covers real skills used in a SOC.
+A collection of cybersecurity projects built as part of my studies in cybersecurity. Each project covers practical skills used in a SOC.
 
 ---
 
-##  Projects
+## Projects
 
 | # | Project | Category | Description |
 |---|---------|----------|-------------|
@@ -27,8 +27,6 @@ A collection of cybersecurity projects built by a 2nd-year cybersecurity student
 | 17 | [Syslog Analyzer](./17-syslog-analyzer/) | Log Analysis | Reads system logs and flags suspicious events like SSH brute force, bad sudo commands, and root account creation |
 | 18 | [Domain Info Lookup](./18-domain-info-lookup/) | OSINT and Threat Intel | Looks up DNS records and reverse DNS for a domain to help with SOC investigations |
 | 19 | [SSL Certificate Checker](./19-ssl-certificate-checker/) | Network Monitoring | Checks SSL/TLS certificates for any domain and flags ones that are expiring soon or already expired |
-
-> New project added every weekday.
 
 ---
 

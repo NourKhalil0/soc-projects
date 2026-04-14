@@ -1,6 +1,7 @@
 import argparse
 import socket
 import sys
+# PTR lookups are flaky, added timeout but still fails sometimes
 from datetime import datetime
 
 

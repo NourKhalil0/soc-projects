@@ -69,16 +69,6 @@ Feedback :
 | Pattern analysis | How attackers exploit predictable patterns |
 | Scoring systems | How to build a simple rule based scoring engine |
 
-## Project Structure
-
-```
-14-password-strength-checker/
-├── password_checker.py   # Main script
-├── diagram.svg           # Visual overview of scoring logic
-├── requirements.txt      # Dependencies
-├── .gitignore            # Python gitignore
-└── README.md             # This file
-```
 
 ## License
 

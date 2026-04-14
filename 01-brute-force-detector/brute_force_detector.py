@@ -16,8 +16,11 @@ SUCCESS_PATTERN = re.compile(
 )
 
 
+# TODO: maybe add support for journalctl output too
 def parse_log(filepath):
     failed = defaultdict(list)
+    # NOTE: invalid user and failed password are basically the same thing
+    # keeping them separate for now in case i need the distinction later
     invalid = defaultdict(list)
     success = defaultdict(list)
 

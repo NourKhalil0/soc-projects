@@ -1,5 +1,7 @@
 import argparse
 import sys
+# local db only for now - real version should hit abuseipdb or similar API
+# TODO: add --api-key flag
 
 THREAT_DB = {
     "185.220.101.45": {"category": "Tor Exit Node", "score": 95, "country": "DE"},

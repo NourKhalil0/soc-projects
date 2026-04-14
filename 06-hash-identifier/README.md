@@ -1,4 +1,4 @@
-#  Hash Identifier
+# Hash Identifier
 
 This tool takes a hash string and tells you what type it is, for example MD5, SHA-1 or SHA-256. It also checks if the hash matches a known weak password like "password" or "123456". SOC analysts use this when investigating breaches where password hashes have been leaked.
 
@@ -53,30 +53,6 @@ python3 hash_identifier.py --generate password sha256
 
 ---
 
-## Example Output
-
-```
-========================================
-         HASH IDENTIFIER REPORT
-========================================
-Hash     : 5f4dcc3b5aa765d61d8327deb882cf99
-Length   : 32 characters
-========================================
-
-Possible type(s): MD5
-WARNING: Known weak password: 'password'
-
-========================================
-         HASH IDENTIFIER REPORT
-========================================
-Hash     : e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-Length   : 64 characters
-========================================
-
-Possible type(s): SHA-256
-```
-
----
 
 ## What you learn
 
@@ -89,18 +65,6 @@ Possible type(s): SHA-256
 
 ---
 
-## Project Structure
-
-```
-06-hash-identifier/
-├── hash_identifier.py
-├── diagram.svg
-├── requirements.txt
-├── .gitignore
-└── README.md
-```
-
----
 
 ## License
 

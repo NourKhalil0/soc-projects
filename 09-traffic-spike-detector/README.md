@@ -80,7 +80,7 @@ Period    : 24 hours
 
 ---
 
-## Project Structure
+## Files
 
 ```
 09-traffic-spike-detector/

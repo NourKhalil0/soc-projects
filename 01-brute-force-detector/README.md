@@ -1,4 +1,4 @@
-#  Brute Force Detector
+# Brute Force Detector
 
 This tool reads a Linux SSH log file and finds IP addresses that have failed to log in too many times. It also checks if any of those IPs eventually got in, which is a sign that something was compromised.
 
@@ -8,7 +8,7 @@ This tool reads a Linux SSH log file and finds IP addresses that have failed to 
 
 ---
 
-##  Features
+## Features
 
 - Flags IP addresses that fail to log in more than a set number of times
 - Marks an IP as COMPROMISED if it failed many times and then succeeded
@@ -18,14 +18,14 @@ This tool reads a Linux SSH log file and finds IP addresses that have failed to 
 
 ---
 
-##  Requirements
+## Requirements
 
 - Python 3.7 or higher
 - A Linux auth log file like `/var/log/auth.log` or `/var/log/secure`
 
 ---
 
-##  Installation
+## Installation
 
 ```bash
 git clone https://github.com/NourKhalil0/soc-projects.git
@@ -34,7 +34,7 @@ cd soc-projects/01-brute-force-detector
 
 ---
 
-##  Usage
+## Usage
 
 Run with the default log file:
 ```bash
@@ -58,7 +58,7 @@ python3 brute_force_detector.py --demo
 
 ---
 
-##  Example Output
+## Example Output
 
 ```
 ========================================
@@ -80,7 +80,7 @@ IP: 192.168.1.99  [ATTACKING]
 
 ---
 
-##  What you learn
+## Notes
 
 | Skill | Description |
 |-------|-------------|
@@ -91,7 +91,7 @@ IP: 192.168.1.99  [ATTACKING]
 
 ---
 
-##  Project Structure
+## Files
 
 ```
 01-brute-force-detector/
@@ -103,7 +103,7 @@ IP: 192.168.1.99  [ATTACKING]
 
 ---
 
-##  License
+## License
 
 MIT
 

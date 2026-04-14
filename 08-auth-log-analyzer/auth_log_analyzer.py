@@ -1,5 +1,7 @@
 import argparse
 import re
+# works for ubuntu/debian auth.log format
+# havent tested on centos/rhel yet - format might differ
 from collections import defaultdict
 
 DEMO_LOGS = [

@@ -4,7 +4,7 @@ This tool reads system log files and flags suspicious events. It checks for SSH 
 
 ![Syslog Analyzer Diagram](./diagram.svg)
 
-## Features
+## What it detects
 
 - Parses real syslog or auth.log files line by line
 - Detects SSH login failures and successful logins
@@ -68,7 +68,7 @@ Scanning 9 lines...
 Total findings: 10
 ```
 
-## What You Learn
+## Notes
 
 | Skill | Description |
 |-------|-------------|
@@ -79,7 +79,7 @@ Total findings: 10
 | Syslog format | What the standard syslog format looks like and what fields it contains |
 | Threat indicators | What events in system logs are considered suspicious in a SOC |
 
-## Project Structure
+## Files
 
 ```
 17-syslog-analyzer/

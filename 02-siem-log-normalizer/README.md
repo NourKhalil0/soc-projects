@@ -1,4 +1,4 @@
-#  SIEM Log Normalizer
+# SIEM Log Normalizer
 
 This tool reads log files from different sources like firewalls, SSH, and web servers, and turns them all into one normalized report. It assigns each event a severity level and shows the most critical ones first, the same way a real SIEM would present information to an analyst.
 

@@ -1,4 +1,4 @@
-#  Port Scanner
+# Port Scanner
 
 This tool scans a target machine and checks which ports are open. For each port it tells you the status and what service is likely running there. It is one of the first things a SOC analyst does when checking the security of a network.
 
@@ -8,7 +8,7 @@ This tool scans a target machine and checks which ports are open. For each port 
 
 ---
 
-## Features
+## What it does
 
 - Scans common ports by default so you get results fast
 - Shows the service name for each open port, for example SSH on port 22
@@ -85,7 +85,7 @@ PORT     SERVICE        STATUS
 
 ---
 
-## What you learn
+## Notes
 
 | Skill | Description |
 |-------|-------------|

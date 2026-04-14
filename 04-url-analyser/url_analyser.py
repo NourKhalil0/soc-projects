@@ -1,5 +1,6 @@
 import argparse
 import re
+# not 100% happy with the keyword list, probably needs more entries
 import urllib.parse
 
 

@@ -4,6 +4,8 @@ import argparse
 import json
 import os
 import random
+# TODO: replace random with actual process detection via psutil
+# currently simulates for demo purposes
 import string
 from datetime import datetime
 

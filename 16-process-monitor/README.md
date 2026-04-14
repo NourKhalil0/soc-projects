@@ -92,6 +92,12 @@ ALERTS:
 └── README.md
 ```
 
+## TODO
+
+- Replace simulated process list with real psutil integration
+- Add config file for blocklist instead of hardcoding
+- Test on Windows (currently Linux only)
+
 ## License
 
 MIT

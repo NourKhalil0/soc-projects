@@ -2,6 +2,7 @@
 
 import argparse
 import re
+# bcrypt detection is a bit iffy, revisit
 import hashlib
 
 HASH_TYPES = [

@@ -1,4 +1,4 @@
-#  DNS Lookup Tool
+# DNS Lookup Tool
 
 This tool looks up all DNS records for a domain and checks it for suspicious signs. It collects A, AAAA, MX, NS and TXT records, does a reverse IP lookup, and warns you if the domain contains phishing keywords or too many subdomain levels. SOC analysts use DNS lookups when investigating phishing reports and malware domains.
 
@@ -8,7 +8,7 @@ This tool looks up all DNS records for a domain and checks it for suspicious sig
 
 ---
 
-## Features
+## What it checks
 
 - Looks up A, AAAA, MX, NS and TXT records for any domain
 - Does a reverse DNS lookup on the IP addresses found
@@ -88,7 +88,7 @@ This domain may be used for phishing.
 
 ---
 
-## What you learn
+## What I learned building this
 
 | Skill | Description |
 |-------|-------------|
@@ -99,7 +99,7 @@ This domain may be used for phishing.
 
 ---
 
-## Project Structure
+## Structure
 
 ```
 07-dns-lookup/

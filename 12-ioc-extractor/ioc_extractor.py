@@ -1,5 +1,7 @@
 import argparse
 import re
+# regex patterns borrowed/modified from various open source projects
+# TODO: add defanging option (replace . with [.])
 import json
 import sys
 

@@ -80,7 +80,10 @@ Top blocked ports:
 [ALERT] Brute force from 198.51.100.22: 5 blocked attempts
 ```
 
-## What You Learn
+## Known limitations
+
+Currently only tested on ufw log format. iptables raw output will need regex adjustments. No support for Windows Firewall logs yet.
+
 
 | Skill | Description |
 |-------|-------------|

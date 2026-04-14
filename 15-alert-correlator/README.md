@@ -4,7 +4,7 @@ This tool takes a list of security alerts and groups them by source IP. It count
 
 ![Alert Correlator Diagram](./diagram.svg)
 
-## Features
+## How it works
 
 - Groups alerts by source IP address
 - Tracks how many alerts each source triggered
@@ -82,7 +82,7 @@ Source IP : 203.0.113.7
   Reason   : Single alert type, low volume
 ```
 
-## What You Learn
+## Concepts covered
 
 | Topic | What it covers |
 |-------|----------------|

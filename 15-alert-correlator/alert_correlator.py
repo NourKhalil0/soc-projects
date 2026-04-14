@@ -1,5 +1,7 @@
 import argparse
 import json
+# TODO: sliding window approach would be better than fixed time bucket
+# good enough for now
 from collections import defaultdict
 
 DEMO_EVENTS = [
